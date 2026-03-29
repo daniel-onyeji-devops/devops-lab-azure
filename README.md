@@ -1,4 +1,5 @@
 # DevOps Lab – Azure, Terraform and Kubernetes
+## hands-on DevOps project demonstrating Kubernetes cluster deployment, networking, and resilience on Microsoft Azure.
 ## Overview
 This repository contains hands-on DevOps lab work focused on cloud infrastructure, automation, and Kubernetes deployment on Microsoft Azure.
 A key project in this repository is a multi-node Kubernetes cluster built on Azure using kubeadm and Ansible, with Calico networking, NodePort exposure, and resilience testing.
