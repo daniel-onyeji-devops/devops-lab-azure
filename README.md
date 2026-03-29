@@ -27,3 +27,6 @@ A key project in this repository is a multi-node Kubernetes cluster built on Azu
 
 ## Project Highlight
 See PROJECT-OVERVIEW.md for a full breakdown of the Kubernetes deployment project.
+## Additional Documentation
+A detailed technical assessment of this project is available here:
+- docs/kubernetes-project.docx
