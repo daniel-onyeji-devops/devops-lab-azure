@@ -1,0 +1,22 @@
+- name: Setup Kubernetes Cluster
+  hosts: k8s_cluster
+  become: yes
+
+  tasks:
+    - name: Install required packages
+      apt:
+        name:
+          - docker.io
+          - apt-transport-https
+          - curl
+        state: present
+        update_cache: yes
+
+    - name: Enable and start Docker
+      service:
+        name: docker
+        state: started
+        enabled: true
+
+    - name: Disable swap
+      command: swapoff -a
