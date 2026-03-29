@@ -1,5 +1,7 @@
-# Ansible
-This folder contains example Ansible configuration used to support Kubernetes cluster setup in my DevOps lab.
+# Kubernetes
+This folder contains example Kubernetes manifests used in my DevOps lab.
 ## Files
-- `inventory.ini` – Example inventory showing control plane and worker nodes
-- `site.yml` – Example playbook for preparing Kubernetes hosts
+- `nginx-deployment.yaml` – Sample deployment for an NGINX workload
+- `nginx-service.yaml` – NodePort service used to expose the workload externally
+
+These files represent the type of Kubernetes resources used as part of my Azure multi-node cluster project.
