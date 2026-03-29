@@ -1,0 +1,30 @@
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+  - stage: Validate
+    displayName: Validate Kubernetes Manifests
+    jobs:
+      - job: LintFiles
+        displayName: Check repository files
+        steps:
+          - script: echo "Validating Kubernetes and Ansible files"
+            displayName: Start validation
+
+          - script: ls -R
+            displayName: List repository contents
+
+  - stage: Deploy
+    displayName: Simulated Deployment
+    jobs:
+      - job: DeployManifests
+        displayName: Deploy Kubernetes manifests
+        steps:
+          - script: echo "kubectl apply -f kubernetes/nginx-deployment.yaml"
+            displayName: Apply deployment
+
+          - script: echo "kubectl apply -f kubernetes/nginx-service.yaml"
+            displayName: Apply service
