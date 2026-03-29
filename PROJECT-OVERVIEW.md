@@ -1,5 +1,6 @@
 # Multi-Node Kubernetes Deployment on Azure
-A hands-on DevOps project demonstrating the deployment, networking, and resilience of a Kubernetes cluster on Microsoft Azure.## Overview
+A hands-on DevOps project demonstrating the deployment, networking, and resilience of a Kubernetes cluster on Microsoft Azure.
+## Overview
 This project demonstrates the design, deployment, and validation of a multi-node Kubernetes cluster on Microsoft Azure using kubeadm and Ansible.
 ## Objective
 Design, deploy, and validate a multi-node Kubernetes cluster on Microsoft Azure, expose a sample workload externally, and demonstrate:
